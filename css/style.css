@@ -1,0 +1,179 @@
+html, 
+body{
+    margin: 0; padding: 0;
+    top: 0; left: 0; 
+    right: 0; bottom: 0;
+
+}
+
+.link-nav{
+    display: block;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #1A1A1A;
+    font-size: 13pt;
+    transition: 0.7s all;
+    margin: 5px;
+   
+}
+
+.principal  {
+    color: black;
+    font-weight: 600;
+    
+}
+
+.link-nav:hover{
+    border-radius: 1px;
+    background-color: RGBA( 30 , 91 , 171 , 50%) ;
+}
+
+.header{
+    background-image: url(../images/seguranca-eletronica.jpeg); 
+    background-position: center;
+    background-size: 100VW;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 85vh;
+    align-items: center;
+}
+
+@media (max-width: 1085px) {
+    .header{
+        background-position: 100%;
+        background-size: auto 100%;
+        height: 75vh;
+    } 
+}
+
+.container-head{
+    background: #0000006b;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.555);
+    margin: 5rem;
+}
+
+
+.btn-contato{
+    --bs-btn-color: #282C5B;
+
+}
+
+.quebra{
+    background:#282C5B;
+}
+
+
+.section-map{
+    position: relative;
+
+
+
+}
+
+.review{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrap-map{
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90vw;
+    height: 300px;
+}
+
+.info-map{
+    background-image: linear-gradient(to top left, #282C5B, #282C5B);
+    width: 25%;
+    color: #fff;
+    font-size: 11pt;
+}
+
+.taggbox{
+    height: 100%;
+    width: 75%;
+}
+
+.footer{
+    padding: 5rem 5rem 1rem 5rem ;
+}
+
+@media (max-width: 900px) {
+    .header{
+        justify-content: center;
+    }
+
+    .wrap-map{
+        display: block;
+        position: relative;
+        left: auto;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .info-map{
+        width: 100%;
+    }
+
+
+    .whatsapp{
+        margin-right: 20px;
+    }
+}
+
+
+.js .anime {
+	opacity: 0;
+}
+
+
+
+.js .anime-init {
+	opacity: 1;
+	transform: translate3D(0px, 0px, 0px);
+	transition: .3s all ease;
+}
+
+.whatsapp{
+    display: block;
+	position: fixed;
+    top: 1; bottom: 0;
+    left: 1; right: 0;
+    margin-right: 80px;
+    background: #178e00;
+    border-radius:100%;
+    padding: 20px;
+    border: 0px;
+    box-shadow: 1px 1px 10px black;
+    transition: all .5s;
+    animation: lifeWhatsApp 1s infinite;
+}
+
+.whatsapp:hover{
+    cursor: pointer;
+    background: #0e5001;
+}
+
+.whatsapp *{
+    color: aliceblue;
+}
+
+
+
+
+@keyframes lifeWhatsApp{
+    0%{
+        margin-bottom: 80px;
+    }
+    50%{
+        margin-bottom: 70px;
+    }
+    100%{
+        margin-bottom: 80px;
+    }
+}
